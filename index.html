@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>421 Dice Game</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Welcome to the 421 Dice Game!</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roll-the-dice.html">Roll the Dice</a>
+      <a href="black-jack.html">Black Jack</a>
+      <a href="read-a-book.html">Read a Book</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="dice-container">
+      <div class="dice" id="dice1" onclick="toggleFreezeDice(1)"></div>
+      <div class="dice" id="dice2" onclick="toggleFreezeDice(2)"></div>
+      <div class="dice" id="dice3" onclick="toggleFreezeDice(3)"></div>
+    </div>
+    <button class="roll-button" onclick="rollDice()">Roll Dice</button>
+    <button class="stand-button" onclick="saveScore()">Stand</button>
+    <div class="score-container">
+      <h2>Scores:</h2>
+      <ul id="score-list"></ul>
+    </div>
+    <div class="throws-container">
+      <h2>Throws:</h2>
+      <div id="throws-counter">0</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
